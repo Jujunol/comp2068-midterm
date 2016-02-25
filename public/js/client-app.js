@@ -17,13 +17,13 @@ $(document).ready(function() {
     if(page == "/list") {
         // setTimeout for image thread
         setTimeout(function() {
-            var maxHeight = 0;
+            var minHeight = 0;
             $('.thumbnail img').each(function() {
-                if($(this).height() > maxHeight) { 
-                    maxHeight = $(this).height(); 
+                if($(this).height() < minHeight) { 
+                    minHeight = $(this).height(); 
                 }
             });
-            $('.thumbnail img').height(maxHeight);
+            $('.thumbnail img').height(minHeight);
         }, 500);
     }
 });
