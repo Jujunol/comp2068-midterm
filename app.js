@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/scripts', express.static(path.join(__dirname, 'public')));
 app.use('/scripts', express.static(path.join(__dirname, 'lib')));
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 
 app.use('/', routes);
 // app.use('/users', users);

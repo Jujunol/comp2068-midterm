@@ -1,0 +1,57 @@
+<% include partials/header %> 
+<% include partials/navbar %>
+<main class="container">
+    <div class="page-header">
+        <h1><%= title %></h1>
+    </div>
+    <p>Here I'll be providing a list of my favourite persons along with a brief description of who
+        they are along with a brief description of why they're on this list</p>
+    <p><i>Note: Some people have been removed in fear that they may view the site or be potentially known</i></p>
+        
+    <!-- Provide list here using thumbnails -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="https://thenewboston.com/profile.php?user=2" title="More Info">
+                    <img src="/images/list-photo-01.jpg" />
+                </a>
+                <div class="caption">
+                    <h3>Bucky Roberts <small>(also known as thenewboston)</small></h3>
+                    <p>Bucky is known around the world for teaching thousands of programmers the knowledge they know today.
+                        Bucky transfers this knownledge and provides these skills using his YouTube channel, thenewboston.
+                        Bucky definetly deserves a spot on this list because if it were not for him, I would not be the programmer
+                        that I am today</p>
+                    <a href="https://thenewboston.com/profile.php?user=2" title="More Info" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="https://plus.google.com/113758397677666453145" title="More Info">
+                    <img src="/images/list-photo-02.jpg" />
+                </a>
+                <div class="caption">
+                    <h3>StealthCoder <small>(not too well known)</small></h3>
+                    <p>StealthCoder is another YouTube tutor who loves teaching programming to the YouTube community.
+                        Unlike thenewboston however, he teacher more advanced concepts like networking and has videos on how
+                        to apply the content from his videos into applications</p>
+                    <a href="https://plus.google.com/113758397677666453145" title="More Info" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="/images/list-photo-03.jpg" />
+                <div class="caption">
+                    <h3>Georgian College Professors <small>(because I couldn't think of a third person...)</small></h3>
+                    <p>The professors here at Georgian College are extremely nice and conciderate. They acknowledge
+                        and listen to what their students have to say. Being a student here is very comfortable and desirable,
+                        not only because you can have a one-on-one conversation with a professor about concerns or potential 
+                        misconceptions but also the fact that every professor (or at least most of them) want nothing more than
+                        to see you actually learn and understand what they're trying to teach.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<% include partials/footer %>

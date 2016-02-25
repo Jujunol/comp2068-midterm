@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/list', function(req, res, next) {
-  res.render('index', { title: 'The List of my favourite persons' });
+  res.render('list', { title: 'The List of my favourite persons' });
 });
 
 router.get('/contact', function(req, res, next) {
