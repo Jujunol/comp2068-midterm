@@ -15,12 +15,15 @@ $(document).ready(function() {
     
     // Manual sizing of the list images
     if(page == "/list") {
-        var maxHeight = 0;
-        $('.thumbnail img').each(function() {
-            if($(this).height() > maxHeight) { 
-                maxHeight = $(this).height(); 
-            }
-        });
-        $('.thumbnail img').height(maxHeight);
+        // setTimeout for image thread
+        setTimeout(function() {
+            var maxHeight = 0;
+            $('.thumbnail img').each(function() {
+                if($(this).height() > maxHeight) { 
+                    maxHeight = $(this).height(); 
+                }
+            });
+            $('.thumbnail img').height(maxHeight);
+        }, 500);
     }
 });
