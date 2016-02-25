@@ -17,7 +17,7 @@ $(document).ready(function() {
     if(page == "/list") {
         // setTimeout for image thread
         setTimeout(function() {
-            var minHeight = 0;
+            var minHeight = 500;
             $('.thumbnail img').each(function() {
                 if($(this).height() < minHeight) { 
                     minHeight = $(this).height(); 
